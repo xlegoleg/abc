@@ -1,0 +1,105 @@
+//Header section
+%header-links{
+  color: $header-text-color;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  &:hover{
+    text-decoration: none;
+    color: $header-text-color;
+  }
+}
+
+// Top section
+%video-size{
+  width: 100%;
+  height: 623px;
+}
+
+%top-title{
+  color: $top-text-color;
+  font-family: Gilroy;
+  font-weight: 800;
+}
+%top-subtitle{
+  color: $top-text-color;
+  font-family: KydryashevHeadlineSans;
+  font-weight: 400;
+}
+%top-descr{
+  color: $top-text-color;
+  font-family: Gilroy;
+  font-weight: 400;
+}
+
+%top-button{
+  @extend %top-descr;
+  font-size: 20px;
+  color: $header-text-color;
+  padding: 16px 24px;
+  border: none;
+  background-color: #fff;
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+%section-title{
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 44px;
+  color: $header-text-color;
+}
+
+
+//Shapes
+
+%rectangle{
+  width: 90px;
+  height: 90px;
+  transform: rotate(45deg);
+  background-color: $rectangle-color;
+}
+
+%round{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+%rounds{
+  position: relative;
+  @extend %round;
+  width: 60px;
+  height: 60px;
+  background-color: $rounds-color;
+  &:before{
+    content: "";
+    @extend %round;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $rounds-color;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+  }
+}
+
+%triangle{
+  width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 120px solid $triangle-color;
+}
+
+%line{
+  width: 100%;
+  height: 2px;
+  margin: 25px 0;
+  background-color: $branch-card-inverse-color;
+}

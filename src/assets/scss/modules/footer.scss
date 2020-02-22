@@ -1,0 +1,46 @@
+.footer{
+  overflow: hidden;
+  position: relative;
+  padding: 100px 0;
+  background: url('/assets/img/images/footer-bg.png') center center/cover no-repeat;
+  &-wrapper{
+    padding-left: 200px;
+  }
+  &-title{
+    @extend %top-title;
+    font-size: 44px;
+  }
+  &-subtitle{
+    @extend %top-subtitle;
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  &-descr{
+    @extend %top-descr;
+    font-size: 20px;
+    margin-bottom: 60px;
+    span{
+      color: $top-text-color;
+      font-weight: 800;
+    }
+  }
+  &-button{
+    @extend %top-button;
+  }
+  &-shape{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+  }
+  &-rounds{
+    @extend %rounds;
+    width: 180px;
+    height: 180px;
+    &:before{
+      content: "";
+      width: 180px;
+      height: 180px;
+    }
+  }
+}

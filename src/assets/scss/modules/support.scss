@@ -1,0 +1,81 @@
+.support{
+  padding: 130px 0;
+  &-title{
+    @extend %section-title;
+    margin-bottom: 75px;
+  }
+  //Shapes begin
+  &-images{
+    &__rectangle{
+      @extend %rectangle;
+      &-img{
+        position: absolute;
+        top: 50%;
+        left:20%;
+        transform: translateY(-50%);
+      }
+    }
+    &__round{
+      @extend %round;
+      background-color: $round-color;
+      position: relative;
+      &:before{
+        content: "";
+        @extend %round;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      &-img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &__rounds{
+      @extend %rounds;
+      &-img{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translateY(-50%);
+      }
+    }
+    &__triangle{
+      @extend %triangle;
+      &-img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  //Shapes end
+  &-line{
+    @extend %line;
+  }
+  &-titles{
+    &__title{
+      @extend %top-title;
+      font-size: 26px;
+      color: $header-text-color;
+    }
+    &__subtitle{
+      @extend %top-subtitle;
+      font-size: 26px;
+      color: $header-text-color;
+    }
+  }
+  &-descr{
+    &__text{
+      @extend %top-descr;
+      padding-right: 35px;
+      font-size: 16px;
+      color: $header-text-color;
+    }
+  }
+}

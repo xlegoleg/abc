@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ABC</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-1">
+            <img class="header-logo" src="/assets/img/images/logo.png" alt="logo">
+          </div>
+          <div class="col-6">
+            <nav class="header-nav">
+              <a href="#" class="header-nav__link">Решения</a>
+              <a href="#" class="header-nav__link">Отрасли</a>
+              <a href="#" class="header-nav__link">Поддержка</a>
+              <a href="#" class="header-nav__link">О компании</a>
+              <a href="#" class="header-nav__link">Контакты</a>
+            </nav>
+          </div>
+          <div class="col-3 offset-2">
+            <div class="header-helper">
+              <div class="header-phone">
+                <img src="/assets/img/icons/header-phone.png" alt="header-phone">
+                <a href="#" class="header-number">+7 (800) 765 43 21</a>
+              </div>
+              <img src="/assets/img/icons/header-search.png" alt="header-search">
+              <span class="header-lang">En</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="top">
+      <div class="container">
+        <div class="top-wrapper">
+          <video class="top-video" src="/assets/video/video.mp4" autoplay muted loop></video>
+          <div class="top-rectangle"></div>
+        </div>
+        <div class="top-firstView">
+          <h1 class="top-firstView__title">Super. Puper.</h1>
+          <p class="top-firstView__subtitle">Premium Technologies</p>
+        </div>
+        <div class="top-secondView">
+          <span class="top-secondView__title">Используйте лучшее,</span>
+          <p class="top-secondView__subtitle">что может предложить <br> платежная индустрия</p>
+          <p class="top-secondView__descr">ABC — надежный партнёр в сфере платежей <br> и обработки карточных данных</p>
+          <button class="top-secondView__button">
+            Начать работу
+            <svg height="10" width="20">
+              <line x1="0" y1="5" x2="20" y2="5" stroke = "black"/>
+              <line x1="14" y1="0" x2="20" y2="5" stroke = "black"/>
+              <line x1="14" y1="10" x2="20" y2="5" stroke = "black"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Popup begin-->
+    <div class="popup" id="popup">
+      <div class="popup-wrapper">
+        <form class="popup-form">
+          <span class="popup-form__title">Подключить услугу</span>
+          <div class="popup-form__field">
+            <input class="popup-form__input" type="text" name="name" id="popup-name" autocomplete="disabled">
+            <label class="popup-form__label"  for="popup-name">Имя</label>
+          </div>
+          <div class="popup-form__field">
+            <input class="popup-form__input" type="email" name="email" id="popup-email" autocomplete="disabled">
+            <label class="popup-form__label"  for="popup-email">E-mail</label>
+          </div>
+          <div class="popup-form__field">
+            <input class="popup-form__input" type="tel" name="tel" id="popup-tel" autocomplete="disabled">
+            <label class="popup-form__label"  for="popup-tel">Телефон</label> 
+          </div>
+          <div class="popup-form__field">
+            <textarea class="popup-form__input" type="text" name="descr" id="popup-descr" autocomplete="disabled"cols="30" rows="1"></textarea>
+            <label class="popup-form__label"  for="popup-descr">Расскажите о своем проекте</label> 
+          </div>
+          <p class="popup-form__descr">Нажимая кнопку, вы соглашаетесь на обработку персональных данных, в соответствии с <a class="popup-form__link" href="#">политикой конфиденциальности.</a></p>
+          <button class="popup-form__button">Подключить</button>
+          <div class="popup-cross">
+            <div class="popup-cross__line"></div>
+            <div class="popup-cross__line"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Popup end-->
+    <section class="branch">
+      <div class="container">
+        <h1 class="branch-title">Решение по отраслям</h1>
+        <ul class="branch-tabs">
+          <li class="branch-tab" id="all"><span><span><span>Все</span></span></span></li>
+          <li class="branch-tab" id="bank"><span><span><span>Банки</span></span></span></li>
+          <li class="branch-tab" id="credit"><span><span><span>Кредитные организации</span></span></span>и</li>
+          <li class="branch-tab" id="internet"><span><span><span>Интернет-ритейл</span></span></span></li>
+          <li class="branch-tab" id="fintech"><span><span><span>Финтех-организации</span></span></span></li>
+        </ul>
+        <div class="wrapper">
+          <div class="item">
+            <div class="branch-card bank">
+              <div class="branch-card__title">Решение номер 1</div>
+              <div class="branch-card__descr">Принимайте платежи по банковским картам и с помощью альтернативных..</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card internet">
+              <div class="branch-card__title">Самое прекрасное решение</div>
+              <div class="branch-card__descr">Выдавайте кредиты на сайте или в мобильном приложении под... </div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card fintech">
+              <div class="branch-card__title">Решение 3</div>
+              <div class="branch-card__descr">Контролируйте и управляйте всеми платежными системами и банками из одного окна...</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card credit">
+              <div class="branch-card__title">Решение к отпуску</div>
+              <div class="branch-card__descr">Начните принимать разовые или регулярные платежи с европейских счетов клиентов через...</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card bank credit">
+              <div class="branch-card__title">Решение 4</div>
+              <div class="branch-card__descr">Принимайте платежи по банковским картам с помощью mPOS и POS терминалов в оффлайновых точкаx..</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card fintech internet">
+              <div class="branch-card__title">Лучшее решение</div>
+              <div class="branch-card__descr">Запустите свою систему расчётов с использованием электронных кошельков.</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card bank internet">
+              <div class="branch-card__title">Решение 5</div>
+              <div class="branch-card__descr">Запустите сервис денежных переводов под собственным брендом. Решение работает через...</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card credit fintech">
+              <div class="branch-card__title">Наше решение</div>
+              <div class="branch-card__descr">Организуйте сервис моментальных безопасных денежных переводов наличными на карты любыx...</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card bank">
+              <div class="branch-card__title">Решение 5</div>
+              <div class="branch-card__descr">Организуйте сервис моментальных безопасных денежных переводов наличными</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="branch-card bank fintech">
+              <div class="branch-card__title">Мобильное решение</div>
+              <div class="branch-card__descr">Организуйте сервис моментальных безопасных денежных переводов наличными</div>
+              <div class="branch-card__svg">
+                <svg height="10" width="20">
+                  <line class="branch-card__svg-line" x1="0" y1="5" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="0" x2="20" y2="5"/>
+                  <line class="branch-card__svg-line" x1="14" y1="10" x2="20" y2="5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <h1 class="support-title">Технологическое преимущество и гибкость<br> — основа для роста бизнеса</h1>
+          </div>
+        </div>
+        <div class="support-images">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <div class="support-images__shape support-images__rectangle"></div>
+              <img class="support-images__rectangle-img" src="/assets/img/icons/rectangle-img.png" alt="">
+            </div>
+            <div class="col-3">
+              <div class="support-images__shape support-images__round"></div>
+              <img class="support-images__round-img" src="/assets/img/icons/round-img.png" alt="">
+            </div>
+            <div class="col-3">
+              <div class="support-images__shape support-images__rounds"></div>
+              <div class="support-images__shape support-images__rounds"></div>
+              <img class="support-images__rounds-img" src="/assets/img/icons/rounds-img.png" alt="">
+            </div>
+            <div class="col-3">
+              <div class="support-images__shape support-images__triangle"></div>
+              <img class="support-images__triangle-img" src="/assets/img/icons/triangle-img.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--Line-->
+        <div class="support-line"></div>
+        <!--Line-->
+        <div class="support-titles">
+          <div class="row">
+            <div class="col-3">
+              <div class="support-titles__title">Быстрый старт</div>
+              <div class="support-titles__subtitle">и кастомизация</div>
+            </div>
+            <div class="col-3">
+              <div class="support-titles__title">Готовые</div>
+              <div class="support-titles__subtitle">интеграции</div>
+            </div>
+            <div class="col-3">
+              <div class="support-titles__title">Актуальные</div>
+              <div class="support-titles__subtitle">технологии</div>
+            </div>
+            <div class="col-3">
+              <div class="support-titles__title">Профессиональная</div>
+              <div class="support-titles__subtitle">поддержка</div>
+            </div>
+          </div>
+        </div>
+        <!--Line-->
+        <div class="support-line"></div>
+        <!--Line-->
+        <div class="support-descr">
+          <div class="row">
+            <div class="col-3">
+              <div class="support-descr__text">Быстрый вывод решения на рынок под вашим собственным брендом.</div>
+            </div>
+            <div class="col-3">
+              <div class="support-descr__text">В нашей системе доступно 300 интеграций с платежными системами, банками и CMS по всему миру.</div>
+            </div>
+            <div class="col-3">
+              <div class="support-descr__text">Apple pay, Google pay,
+                AFT, рекуррентные платежи,  e-commerce, POS и mPOS, Master Card Money Send, Visa Direct и другие.</div>
+            </div>
+            <div class="col-3">
+              <div class="support-descr__text">Профессиональная техподдержка и сопровождение клиента во время интеграции и после запуска.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h1 class="about-title">Как это работает</h1>
+        <div class="row no-gutters">
+          <div class="col-4 offset-1">
+            <div class="about-line"></div>
+            <ol class="about-list">
+              <li class="about-list__item">Вы звоните заёмщику и договариваетесь о размере платежа по займу.</li>
+              <li class="about-list__item">Заёмщик переводит телефон в тоновый режим и вводит номер банковской карты.</li>
+              <li class="about-list__item">С карты списываются деньги в счет погашения кредиты.</li>
+              <li class="about-list__item">Чек по операции автоматически отправляется по электронной почте и по СМС.</li>
+            </ol>
+            <div class="about-descr">
+              Сервис предоставляется в рамках <br>
+              <a href="#" class="about-link">онлайн-кредитования</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="about-img" src="/assets/img/images/about-img.png" alt="about-img">
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <span class="footer-title">Свяжитесь с нами</span>
+          <p class="footer-subtitle">чтобы запустить эффективное <br> платежное решение</p>
+          <p class="footer-descr">Более 1,5 тысяч клиентов уже доверили <br> свои проекты <span>ABC</span></p>
+          <button class="footer-button top-secondView__button">
+            Начать работу
+            <svg height="10" width="20">
+              <line x1="0" y1="5" x2="20" y2="5" stroke = "black"/>
+              <line x1="14" y1="0" x2="20" y2="5" stroke = "black"/>
+              <line x1="14" y1="10" x2="20" y2="5" stroke = "black"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-shape button">
+        <div class="footer-rounds"></div>
+        <div class="footer-rounds"></div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+//Customize col padding for this section =)
+
+.branch + .container + .row + .col,
+ [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.item{
+  width: 165px;
+  margin: 0 10px;
+}
+
+.branch{
+
+  background-color: $branch-bg-color;
+  padding: 80px 0 180px 0;
+  &-title{
+    @extend %section-title;
+  }
+  &-tabs{
+    padding: 25px 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  &-tab{
+    @include tab-border-slide(transparent, $header-text-color, 1px, 1.2s);
+    @extend %top-subtitle;
+    font-size: 24px;
+    color: $header-text-color;
+    padding: 6px 15px;
+  }
+  &-card{
+   height: 180px;
+   position: relative;
+   padding: 16px;
+   background-color: $branch-card-color;
+   &:hover{
+     cursor: pointer;
+   }
+   //Active class
+   &_active{
+     background-color: $header-text-color;
+     color: $branch-card-inverse-color;
+     transition: all 0.3s;
+   }
+   &__title{
+     @extend %top-title;
+     color: $header-text-color;
+     font-size: 16px;
+     line-height: 1.2;
+     &_active{
+       color: $top-text-color;
+       transition: all 0.3s;
+     }
+   }
+   &__descr{
+     @extend %top-descr;
+     color: $header-text-color;
+     font-size: 12px;
+     margin: 10px 0;
+     line-height: 1.4;
+     &_active{
+      color: $top-text-color;
+      transition: all 0.3s;
+    }
+   }
+   &__svg{
+     position: absolute;
+     bottom: 5%;
+     svg{
+      line{
+        stroke: $header-text-color;
+      }
+     }
+     &_active{
+      svg{
+        line{
+          transition: all 0.6s;
+          stroke: $top-text-color;
+        }
+       }
+     }
+   }
+  }
+}
